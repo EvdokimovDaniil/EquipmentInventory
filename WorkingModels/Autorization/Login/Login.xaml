@@ -1,0 +1,97 @@
+﻿<Page x:Class="EquipmentInventory.WorkingModels.Autorization.Login.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EquipmentInventory.WorkingModels.Autorization.Login"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Login">
+
+    <Grid>
+        <Grid Height="60"
+              Background="#0060AC"
+              VerticalAlignment="Top">
+            <Label Content="Авторизация"
+                   Margin="0,0,0,0"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Center"
+                   FontSize="30"
+                   Foreground="White">
+            </Label>
+            <Border Height="30"
+                    Margin="0,0,20,0"
+                    CornerRadius="5,5,5,5"
+                    Padding="2,2,2,2"
+                    MouseDown="Click_Exit"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Width="110"
+                    Background="#E41613">
+                <Grid Height="20">
+                    <Label 
+                           Content="Выход"
+                           FontSize="15"
+                           VerticalContentAlignment="Center"
+                           HorizontalContentAlignment="Center"
+                           Height="30"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Width="112"
+                           Foreground="White" />
+                </Grid>
+            </Border>
+        </Grid>
+        <Grid Background="White"
+              Margin="0,60,0,0">
+            <Label Content="Логин"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,270,220"
+                   Width="72" />
+            <TextBox x:Name="name_user"
+                     Margin="0,0,0,150"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Width="342"
+                     Height="28" />
+            <Label Content="Пароль"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Height="28"
+                   Margin="0,0,230,70"
+                   Width="108" />
+            <PasswordBox x:Name="pswd_user"
+                     Margin="0,0,0,0"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Width="340"
+                     Height="28" />
+            <Label Content="Нет аккаунта? Зарегистрируйтесь" Foreground="#9EA1A2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100,100,0" MouseDown="For_Registration"/>
+            <Border Height="30"
+                    Margin="230,100,0,0"
+                    CornerRadius="5,5,5,5"
+                    Padding="2,2,2,2"
+                    MouseDown="Click_Login"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Width="110"
+                    Background="#0060AC">
+                <Grid Height="20">
+                    <Label 
+                           Content="Войти"
+                           FontSize="15"
+                           VerticalContentAlignment="Center"
+                           HorizontalContentAlignment="Center"
+                           Height="30"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           Width="112"
+                           Foreground="White" />
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>
